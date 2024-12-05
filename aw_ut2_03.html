@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title> CUESTIONARIO DRAGON BALL </title>
+    </head>
+    <body background="goku3.png">
+        <FONT color="white">
+            <h1>CUESTIONARIO DRAGON BALL Z/SUPER.</h1>
+        </FONT>
+        <form action="process_form.php" method="post" enctype="multipart/form-data" name="dragonball_form">
+            <fieldset>
+                <legend>Información básica</legend>
+                <label for="nombre" accesskey="n">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" maxlength="50" required tabindex="1">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Opinión</legend>
+                <label for="comentario">¿Cuál es tu momento favorito de la serie?</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe aquí tu respuesta" tabindex="2"></textarea>
+            </fieldset>
+    
+            <fieldset color="blue">
+                <legend>Personaje favorito</legend>
+                <label><input type="radio" name="personaje" value="Goku" tabindex="3"> Goku</label>
+                <label><input type="radio" name="personaje" value="Vegeta" tabindex="4"> Vegeta</label>
+                <label><input type="radio" name="personaje" value="Piccolo" tabindex="5"> Piccolo</label>
+                <label><input type="radio" name="personaje" value="Gohan" tabindex="6"> Gohan</label>
+                <label><input type="radio" name="personaje" value="Freezer" tabindex="7"> Freezer</label>
+                <label><input type="radio" name="personaje" value="Cell" tabindex="8"> Cell</label>
+                <label><input type="radio" name="personaje" value="Majin Buu" tabindex="9"> Majin Buu</label>
+                <label><input type="radio" name="personaje" value="Trunks del futuro" tabindex="10"> Trunks del futuro</label>
+                <label><input type="radio" name="personaje" value="Androide 18" tabindex="11"> Androide 18</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Transformaciones que te gustan</legend>
+                <label><input type="checkbox" name="transformaciones[]" value="Super Saiyan 1" tabindex="12"> Super Saiyan 1</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Super Saiyan 2" tabindex="13"> Super Saiyan 2</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Super Saiyan 3" tabindex="14"> Super Saiyan 3</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Super Saiyan Dios" tabindex="15"> Super Saiyan Dios</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Super Saiyan Blue" tabindex="16"> Super Saiyan Blue</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Super Saiyan Blue Evolution" tabindex="17"> Super Saiyan Blue Evolution</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Ultra Instinto" tabindex="18"> Ultra Instinto</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Freezer Forma Final" tabindex="19"> Freezer Forma Final</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Golden Freezer" tabindex="20"> Golden Freezer</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Buutenks" tabindex="21"> Buutenks</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Buuhan" tabindex="22"> Buuhan</label>
+                <label><input type="checkbox" name="transformaciones[]" value="Cell Perfecto" tabindex="23"> Cell Perfecto</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Sube una imagen</legend>
+                <label for="imagen">Sube tu imagen favorita de Dragon Ball:</label>
+                <input type="file" id="imagen" name="imagen" tabindex="24">
+            </fieldset>
+    
+            <fieldset>
+                <legend>Arco favorito</legend>
+                <label for="arco">Selecciona tu arco favorito:</label>
+                <select id="arco" name="arco" tabindex="25">
+                    <option value="Saiyan">Saga de los Saiyan</option>
+                    <option value="Freezer">Saga de Freezer</option>
+                    <option value="Cell">Saga de Cell</option>
+                    <option value="Majin Buu">Saga de Majin Buu</option>
+                </select>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Arcos que más te gustaron</legend>
+                <label for="arcos">Selecciona varios arcos (Ctrl o Cmd + clic):</label>
+                <select id="arcos" name="arcos[]" multiple size="4" tabindex="26">
+                    <option value="Saiyan">Saga de los Saiyan</option>
+                    <option value="Freezer">Saga de Freezer</option>
+                    <option value="Cell">Saga de Cell</option>
+                    <option value="Majin Buu">Saga de Majin Buu</option>
+                </select>
+            </fieldset>
+    
+            <input type="hidden" name="universo" value="Dragon Ball" tabindex="27">
+    
+            <fieldset>
+                <legend>Acciones</legend>
+                <button type="submit" tabindex="28" accesskey="x">Enviar Formulario</button>
+                <button type="reset" tabindex="29">Reiniciar Cuestionario</button>
+                <button type="button" onclick="alert('Mi personaje favorito es Vegeta')" tabindex="30">Dato Curioso</button>
+            </fieldset>
+        </form>
+    
+        <hr>
+        <a href="aw_ut2_01.html"><img src="goku.png" height="100px" width="180px" alt="Inicio" tabindex="31">Inicio</a>
+        <a href="aw_ut2_02.html"><img src="goku2.png" height="100px" width="180px" alt="Transformaciones" tabindex="32">Transformaciones</a>
+    </body>
+    </html>
